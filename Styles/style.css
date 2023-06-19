@@ -104,23 +104,38 @@ HOME IMAGEM
   border-radius: 15px 0px;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.712);
   background-color: var(--cinza_claro);
-  font-size:clamp(1.3em,10px + 1.5vw,3em);
+  font-size:clamp(1.2em,10px + 1.5vw,3em);
   color:var(--preto);
-  gap: 10px;
+  gap: 15px;
   
 }
 #homedesenvolvedor{
   font-family:var(--fontaveria);
 }
-#homefront_end h1{
-  font-family:var(--fontlilita);
-  font-size:clamp(1.6em,10px + 1.5vw,3em);
+#homefront_end{
+  display: flex;
+  align-items: center;
+  height: 90%;
 
-  background-image: linear-gradient(to right,var(--azul) 1px,var(--preto)45%);
+  font-family:var(--fontlilita);
+  font-size:clamp(1.3em,10px + 1.5vw,3em);
+
+  /*background-image: linear-gradient(to right,var(--azul) 1px,var(--preto)45%);*/
+  background-color: var(--azul);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
+
+  width: 11ch;
+  border-right:8px solid var(--preto);
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: digitar 3s steps(12) alternate infinite, piscando 0.5s infinite step-end ;
+
 }
+
 /* ---------------- */
 /* ----- SOBRE MIM ----- */
 section#sobre_mim{
@@ -140,6 +155,8 @@ section#sobre_mim{
   width: 50%;
   min-width: 150px;
   height: auto;
+
+  animation: flutuante 8s ease-in-out alternate infinite;
 }
 /* SOBRE TEXT */
 #sobre_mimtext_div{
@@ -179,3 +196,29 @@ section#sobre_mim{
 }
 
 
+
+
+
+/* ----- KEYFRAMES ----- */
+@keyframes digitar{
+  from{
+    width: 0;
+  }
+}
+@keyframes piscando{
+  50%{
+    border-color: transparent;
+  }
+}
+
+@keyframes flutuante{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(60px);
+  }
+}
