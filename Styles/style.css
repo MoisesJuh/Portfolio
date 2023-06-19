@@ -3,7 +3,7 @@
 /* Import de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap'); /*Lilita One*/
 
-@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');/*Just Another Hand*/
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');/*Fascinate*/
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap');/*Averia Gruesa Libre*/
 
@@ -22,15 +22,71 @@
 
 /* FONTES */
   --fontlilita:'Lilita One';
-  --fonthand:'Just Another Hand';
+  --fontfascinate:'Fascinate';
   --fontaveria:'Averia Gruesa Libre';
 }
+
 /* ----- MAIN ----- */
 main{
   background: black url(imagens/fundo\ com\ estrelas.png) no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
+
 }
+/* ---------------- */
+
+/* ----- HEADER ----- */
+header{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+
+
+  width: 100dvw;
+  height: 50px;
+  backdrop-filter: blur(2px);
+  justify-content: center;
+  align-items: center;
+}
+header nav{
+  width: 100%;
+  height: 100%;
+}
+#lista_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  gap: 5vw;
+}
+#lista_header li{
+  font-family: var(--fontfascinate);
+  font-size: 18px;
+  transition: 0.5s;
+
+  
+}
+#lista_header a{
+  text-decoration: none;
+  color: white;
+}
+#lista_header li:hover{
+  transform: translateY(2px);
+  border-bottom: 1px solid white;
+}
+#lista_header li:hover a{
+  background-image: linear-gradient(to right,var(--azul) 1px,var(--cinza_claro));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------------- */
+
 /* ----- HOME ----- */
 section#home{
   display: flex;
@@ -120,20 +176,41 @@ HOME IMAGEM
   font-family:var(--fontlilita);
   font-size:clamp(1.3em,10px + 1.5vw,3em);
 
-  /*background-image: linear-gradient(to right,var(--azul) 1px,var(--preto)45%);*/
-  background-color: var(--azul);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--azul);
 
 
   width: 11ch;
   border-right:8px solid var(--preto);
   white-space: nowrap;
   overflow: hidden;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
 
   animation: digitar 3s steps(12) alternate infinite, piscando 0.5s infinite step-end ;
 
+}
+
+/*home button*/
+#home_button{
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+
+  margin-top: 15px;
+}
+#home_button a{
+  font-size: 15px;
+  font-family: var(--fontfascinate);
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+#home_button a:hover{
+  font-size: 18px;
+  background-image: linear-gradient(to right,var(--azul) 1px,var(--cinza_claro));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* ---------------- */
@@ -179,7 +256,7 @@ section#sobre_mim{
   padding: 5px;
 
   font-size: 30px;
-  font-family:var(--fontlilita);
+  font-family:var(--fontfascinate);
   color: var(--azul);
   background-color: var(--cinza_claro);
   border-radius: 30px;
@@ -200,6 +277,7 @@ section#sobre_mim{
 
 
 /* ----- KEYFRAMES ----- */
+/*Digitando*/
 @keyframes digitar{
   from{
     width: 0;
@@ -211,6 +289,7 @@ section#sobre_mim{
   }
 }
 
+/*astronauta*/
 @keyframes flutuante{
   0%{
     transform: translateY(80px);
