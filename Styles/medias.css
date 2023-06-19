@@ -1,4 +1,6 @@
-@media  screen and (max-width:850px)/*and (min-width:600px)*/ {
+@media  screen and (max-width:900px)/*and (min-width:600px)*/ {
+
+  /* SOBRE MIM */
   section#sobre_mim{
     flex-direction: column-reverse;
     gap: 0px;
@@ -7,6 +9,9 @@
     width: 250px ;
     height: auto;
   }
+
+
+  /* KeyFrames */
   @keyframes flutuante{
     0%,100%{
       transform: translateY(0px);

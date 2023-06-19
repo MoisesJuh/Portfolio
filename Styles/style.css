@@ -156,7 +156,7 @@ section#sobre_mim{
   min-width: 150px;
   height: auto;
 
-  animation: flutuante 8s ease-in-out alternate infinite;
+  animation: flutuante 6s ease-in-out alternate infinite;
 }
 /* SOBRE TEXT */
 #sobre_mimtext_div{
@@ -192,7 +192,7 @@ section#sobre_mim{
 
   background-color:var(--preto);
   border-radius: 10px 0px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.308);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.226);
 }
 
 
@@ -213,12 +213,9 @@ section#sobre_mim{
 
 @keyframes flutuante{
   0%{
-    transform: translateY(0px);
-  }
-  50%{
-    transform: translateY(-30px);
+    transform: translateY(80px);
   }
   100%{
-    transform: translateY(60px);
+    transform: translateY(-60px);
   }
 }
