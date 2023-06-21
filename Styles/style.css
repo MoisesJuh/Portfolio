@@ -20,6 +20,9 @@
   --cinza_claro:#F7F9F9;
   --azul:#00EBE3;
 
+  --gradiente: linear-gradient(
+    to right, #00ebe371,var(--preto)); 
+
 /* FONTES */
   --fontlilita:'Lilita One';
   --fontfascinate:'Fascinate';
@@ -28,14 +31,15 @@
 
 /* ----- MAIN ----- */
 main{
+  width: 100dvw;
+  height: 100dvh;
   background: black url(imagens/fundo\ com\ estrelas.png) no-repeat center center fixed;
   background-size: cover;
-  overflow-x: hidden;
 
 }
 /* ---------------- */
 
-/* ----- HEADER ----- */
+/* ----- HEADER ----- 
 header{
   z-index: 1000;
   position: fixed;
@@ -84,10 +88,71 @@ header nav{
   -webkit-background-clip: text;
   color: transparent;
 }
+*/
 
 /* ---------------- */
 
 /* ----- HOME ----- */
+#home{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+#home_imgdiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--gradiente);
+
+  background-size: 500% 100%;
+  animation: fundoanimado 5s infinite alternate ;
+
+  max-width: 400px;
+  width: 20vw;
+  min-width: 200px;
+  max-height: 400px;
+  height: 20vw;
+  min-height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+#home_img{
+  animation: flutuante 6s ease-in-out alternate infinite;
+  width: 140%;
+}
+
+#home_logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  height: auto;
+  gap: 15px;
+}
+#home_logoimg{
+  width: 100px;
+  height: 100px;
+  background: url(imagens/lua.png) no-repeat center center;
+  background-size: contain;
+}
+#home_logotext{
+  color: white;
+  font-size: 20px;
+  font-family: var(--fontlilita);
+}
+
+
+/* ----- HOME ----- 
 section#home{
   display: flex;
   flex-direction: row;
@@ -100,29 +165,7 @@ section#home{
  
 }
 
-/*
-
-HOME IMAGEM 
-
-#homeimagem_div{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-
-  width: 60%;
-  height: 100%;
-}
-#homeimagem_div img{
-  border-radius: 50%;
-  height: 300px;
-  width: auto;
-
-  margin: 4px;
-}
-*/
-
-
-/* HOME TEXT */
+HOME TEXT
 #hometext{
   display: flex;
   flex-direction: column;
@@ -133,7 +176,7 @@ HOME IMAGEM
   height: 100%;
 }
 
-/*home p*/
+home 
 #hometext p{
   font-size: 20px;
   color: white;
@@ -143,7 +186,7 @@ HOME IMAGEM
   background-color: rgba(0, 0, 0, 0.664);
   padding: 8px;
 }
-/*home h1*/
+home h1
 #hometext_h1{
   position: relative;
   display: flex;
@@ -189,7 +232,7 @@ HOME IMAGEM
 
 }
 
-/*home button*/
+home buttom
 #home_button{
   border: 1px solid white;
   border-radius: 20px;
@@ -212,9 +255,10 @@ HOME IMAGEM
   -webkit-background-clip: text;
   color: transparent;
 }
+*/
 
 /* ---------------- */
-/* ----- SOBRE MIM ----- */
+/* ----- SOBRE MIM ----- 
 section#sobre_mim{
   display: flex;
   flex-direction: row;
@@ -226,7 +270,7 @@ section#sobre_mim{
   gap: 100px;
   
 }
-/* SOBRE IMG */
+ SOBRE IMG 
 #sobre_mim img{
   max-width: 400px;
   width: 50%;
@@ -235,7 +279,7 @@ section#sobre_mim{
 
   animation: flutuante 6s ease-in-out alternate infinite;
 }
-/* SOBRE TEXT */
+ SOBRE TEXT 
 #sobre_mimtext_div{
   display: flex;
   flex-direction: column;
@@ -271,7 +315,7 @@ section#sobre_mim{
   border-radius: 10px 0px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.226);
 }
-
+*/
 
 
 
@@ -289,12 +333,21 @@ section#sobre_mim{
   }
 }
 
+@keyframes fundoanimado{
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+
 /*astronauta*/
 @keyframes flutuante{
   0%{
-    transform: translateY(80px);
+    transform: translateY(20px);
   }
   100%{
-    transform: translateY(-60px);
+    transform: translateY(-10px);
   }
 }
