@@ -1,23 +1,25 @@
 @media  screen and (max-width:900px)/*and (min-width:600px)*/ {
 
-  /* SOBRE MIM */
-  section#sobre_mim{
-    flex-direction: column-reverse;
-    gap: 0px;
+  #home_logoimg{
+    width: 80px;
+   height: 80px;
   }
-  section#sobre_mim img{
-    width: 250px ;
-    height: auto;
+  #home_logotext{
+    font-size: 15px;
+  }
+  #home_imgdiv{
+    background-image: none;
+    border: none;
   }
 
 
   /* KeyFrames */
   @keyframes flutuante{
     0%,100%{
-      transform: translateY(0px);
+      transform: translateY(20px);
     }
     50%{
-      transform: translateY(-30px);
+      transform: translateY(-20px);
     }
   }
 }
