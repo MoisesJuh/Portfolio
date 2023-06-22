@@ -33,21 +33,22 @@
 main{
   width: 100dvw;
   height: 100dvh;
-  background: black url(imagens/fundo\ com\ estrelas.png) no-repeat center center fixed;
-  background-size: cover;
+  background: black;
 
 }
 /* ---------------- */
 
-/* ----- HEADER ----- 
+/* ----- HEADER ----- */
 header{
+  rotate: none;
   z-index: 1000;
   position: fixed;
-  top: 0;
+  right:-22%;
+  top: 70px;
 
 
   width: 100dvw;
-  height: 50px;
+  height: 0px;
   backdrop-filter: blur(2px);
   justify-content: center;
   align-items: center;
@@ -69,7 +70,7 @@ header nav{
 }
 #lista_header li{
   font-family: var(--fontfascinate);
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.5s;
 
   
@@ -88,7 +89,7 @@ header nav{
   -webkit-background-clip: text;
   color: transparent;
 }
-*/
+
 
 /* ---------------- */
 
@@ -110,7 +111,7 @@ header nav{
   background-image: var(--gradiente);
 
   background-size: 500% 100%;
-  animation: fundoanimado 5s infinite alternate ;
+  animation: fundoanimado 3s infinite alternate ;
 
   max-width: 400px;
   width: 20vw;

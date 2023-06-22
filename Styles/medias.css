@@ -1,4 +1,11 @@
 @media  screen and (max-width:900px)/*and (min-width:600px)*/ {
+  header{
+    rotate: 90deg;
+    z-index: 1000;
+    position: fixed;
+    right: -47%;
+    top: 50%;
+  }
 
   #home_logoimg{
     width: 80px;
