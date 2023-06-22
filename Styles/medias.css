@@ -1,4 +1,4 @@
-@media  screen and (max-width:900px)/*and (min-width:600px)*/ {
+@media  screen and (max-width:900px){
 
   /* HEADER */
 
@@ -29,7 +29,7 @@
   /* SOBRE MIM */
   
   #sobre_mimtext{
-    height: 500px;
+    height: 80%;
   }
 
 
