@@ -29,9 +29,18 @@
   /* SOBRE MIM */
   
   #sobre_mimtext{
-    height: 75%;
+    width: 99%;
+    height: 80%;
   }
 
+  /* PROJETOS */
+  section#projetos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 170vh;
+  }
 
   /* KeyFrames */
   @keyframes flutuante{
