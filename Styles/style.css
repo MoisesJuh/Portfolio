@@ -31,7 +31,7 @@
 
 /* ----- MAIN ----- */
 main{
-  width: 100dvw;
+  max-width: 100dvw;
   height: 100dvh;
   background: black;
 
@@ -153,151 +153,35 @@ header nav{
   font-size: 20px;
   font-family: var(--fontlilita);
 }
-
-
-/* ----- HOME ----- 
-section#home{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
-  width: 100dvw;
-  height: 100dvh;
- 
-}
-
-HOME TEXT
-#hometext{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  width: 100%;
-  height: 100%;
-}
-
-home 
-#hometext p{
-  font-size: 20px;
-  color: white;
-  font-family:var(--fontaveria);
-
-
-  background-color: rgba(0, 0, 0, 0.664);
-  padding: 8px;
-}
-home h1
-#hometext_h1{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  
-  width: 60%;
-  min-width: 400px;
-  max-width: 700px;
-  height: 60px;
-
-  border-radius: 15px 0px;
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.712);
-  background-color: var(--cinza_claro);
-  font-size:clamp(1.2em,10px + 1.5vw,3em);
-  color:var(--preto);
-  gap: 15px;
-  
-}
-#homedesenvolvedor{
-  font-family:var(--fontaveria);
-}
-#homefront_end{
-  display: flex;
-  align-items: center;
-  height: 90%;
-
-  font-family:var(--fontlilita);
-  font-size:clamp(1.3em,10px + 1.5vw,3em);
-
-  color: var(--azul);
-
-
-  width: 11ch;
-  border-right:8px solid var(--preto);
-  white-space: nowrap;
-  overflow: hidden;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
-
-  animation: digitar 3s steps(12) alternate infinite, piscando 0.5s infinite step-end ;
-
-}
-
-home buttom
-#home_button{
-  border: 1px solid white;
-  border-radius: 20px;
-  text-align: center;
-  width: 150px;
-
-  margin-top: 15px;
-}
-#home_button a{
-  font-size: 15px;
-  font-family: var(--fontfascinate);
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-#home_button a:hover{
-  font-size: 18px;
-  background-image: linear-gradient(to right,var(--azul) 1px,var(--cinza_claro));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-*/
-
 /* ---------------- */
-/* ----- SOBRE MIM ----- 
-section#sobre_mim{
+/* ----- SOBRE MIM ----- */
+#sobre_mim{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  gap: 100px;
-  
-}
- SOBRE IMG 
-#sobre_mim img{
-  max-width: 400px;
-  width: 50%;
-  min-width: 150px;
-  height: auto;
 
-  animation: flutuante 6s ease-in-out alternate infinite;
+  background-color: var(--preto);
 }
- SOBRE TEXT 
-#sobre_mimtext_div{
+
+#sobre_mimtext{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  max-width: 350px;
-  min-width: 100px;
-  height: auto;
+  width: 500px;
+  height: 200px;
   padding: 15px;
   gap: 20px;
   
   color: white;
+
 }
-#sobre_mimtext_div h1{
+#sobre_mimtext h1{
   text-align: center;
   width: 50%;
   padding: 5px;
@@ -308,17 +192,19 @@ section#sobre_mim{
   background-color: var(--cinza_claro);
   border-radius: 30px;
 }
-#sobre_mimtext_div p{
+#sobre_mimtext p{
   font-family: var(--fontaveria);
   font-size: 25px;
   text-indent: 20px;
-  padding: 10px;
+  padding: 20px;
+  width: 75%;
+  text-align: justify;
 
   background-color:var(--preto);
-  border-radius: 10px 0px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.226);
 }
-*/
+
 
 
 
