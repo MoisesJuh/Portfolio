@@ -124,7 +124,7 @@ header nav{
 }
 
 #home_img{
-  animation: flutuante 6s ease-in-out alternate infinite;
+  animation: flutuanteperso 4s ease-in-out alternate infinite;
   width: 140%;
 }
 
@@ -139,12 +139,14 @@ header nav{
   width: auto;
   height: auto;
   gap: 15px;
+  
 }
 #home_logoimg{
   width: 100px;
   height: 100px;
   background: url(imagens/lua.png) no-repeat center center;
   background-size: contain;
+  animation: flutuantelua 4s ease-in-out alternate infinite;
 }
 #home_logotext{
   color: white;
@@ -344,11 +346,20 @@ section#sobre_mim{
 }
 
 /*astronauta*/
-@keyframes flutuante{
+@keyframes flutuanteperso{
   0%{
     transform: translateY(20px);
   }
   100%{
     transform: translateY(-10px);
+  }
+}
+/*lua*/
+@keyframes flutuantelua{
+  0%{
+    transform: translateY(5px);
+  }
+  100%{
+    transform: translateY(-5px);
   }
 }

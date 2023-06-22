@@ -1,11 +1,22 @@
 @media  screen and (max-width:900px)/*and (min-width:600px)*/ {
+
+  /* HEADER */
+
   header{
     rotate: 90deg;
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     right: -47%;
     top: 50%;
   }
+  #lista_header a{
+    background-image: linear-gradient(to right,var(--azul) 1px,var(--cinza_claro));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* HOME */
 
   #home_logoimg{
     width: 80px;
@@ -19,10 +30,10 @@
 
   /* KeyFrames */
   @keyframes flutuante{
-    0%,100%{
+    0%{
       transform: translateY(20px);
     }
-    50%{
+    100%{
       transform: translateY(-20px);
     }
   }
