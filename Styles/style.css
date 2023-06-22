@@ -98,6 +98,7 @@ header nav{
 #home{
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -150,10 +151,89 @@ header nav{
   animation: flutuantelua 4s ease-in-out alternate infinite;
 }
 #home_logotext{
+
   color: white;
   font-size: 20px;
   font-family: var(--fontlilita);
 }
+/* home contato */
+#home_contato{
+  position: absolute;
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 300px;
+  height: 150px;
+}
+#home_contatoimg{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  gap: 20px;
+}
+#home_contatogithub{
+  width: 50px;
+  height: 50px;
+
+  background: black url(imagens/github\ preto.png)no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+
+  transition: 0.5s;
+}
+#home_contatolinkedin{
+  width: 50px;
+  height: 50px;
+
+  background: black url(imagens/linkedin\ preto.png)no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+
+  transition: 0.5s;
+}
+#home_contatogithub:hover{
+  width: 60px;
+  height: 60px;
+
+  background: black url(imagens/github\ branco.jpg)no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px white;
+}
+#home_contatolinkedin:hover{
+  width: 60px;
+  height: 60px;
+
+  background: black url(imagens/linkedin\ branco.png)no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px white;
+}
+/* contato gmail */
+
+#home_contatogmail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  height: 40px;
+  width: 100%;
+}
+#home_contatogmail img{
+  width: 40px;
+  height: 40px;
+}
+#home_contatogmail p{
+  font-family: var(--fontaveria);
+  color: white;
+}
+
 /* ---------------- */
 /* ----- SOBRE MIM ----- */
 #sobre_mim{
@@ -402,6 +482,16 @@ header nav{
   padding: 10px;
 
   border-radius: 20px;
+
+  transition: 0.5s;
+}
+.projetos_link a:hover{
+  padding: 12px;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 3px white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.781);
+  border: 1px solid white;
 }
 
 .projetos_div:hover .projetos_text{
